@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% include 'classroom/_guest_header.html' with active='about' %}
+  <h2>Welcome to the Django School quiz! <span class="icon-emo-happy"></span></h2>
+  <p class="lead">
+    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new to Django School, get started
+    by creating a <a href="{% url 'signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
+  </p>
+
